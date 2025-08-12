@@ -67,11 +67,15 @@ public class AdServiceClient {
     } catch (StatusRuntimeException e) {
       logger.log(Level.WARN, "RPC failed: " + e.getStatus());
       return;
-    } 
+    }
     for (Ad ads : response.getAdsList()) {
       logger.info("Ads: " + ads.getText());
     }
   }
+
+    private void test() {
+        System.out.println("test");
+    }
 
   private static int getPortOrDefaultFromArgs(String[] args) {
     int portNumber = 9555;
