@@ -1,0 +1,11 @@
+# 🎯 최소한의 설정 (중요한 문제만)
+have_fun: false
+code_review:
+  disable: false
+  comment_severity_threshold: CRITICAL  # 심각한 문제만
+  max_review_comments: 3               # 최대 3개 댓글
+  pull_request_opened:
+    help: false
+    summary: false                     # 요약 비활성화
+    code_review: true
+ignore_patterns: []
