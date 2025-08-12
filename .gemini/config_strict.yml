@@ -1,0 +1,13 @@
+# 🔒 엄격한 설정 (모든 문제 표시)
+have_fun: false
+code_review:
+  disable: false
+  comment_severity_threshold: LOW  # 모든 문제 표시
+  max_review_comments: 5          # 최대 5개 댓글만
+  pull_request_opened:
+    help: true                    # 도움말 표시
+    summary: true
+    code_review: true
+ignore_patterns: 
+  - "*.test.py"                   # 테스트 파일 무시
+  - "docs/**"                     # 문서 폴더 무시
